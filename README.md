@@ -1,7 +1,7 @@
 
-<h1 style="text-align: center">HUNGRY PEOPLE</h1>
+<h1 style="text-align: center">Website "HUNGRY PEOPLE"</h1>
 ---
-Website Link (Demo)
+Link (Demo)
 
 <img src="./images/screenshot-page_top.jpg" style='display:block;margin-left:auto;margin-right:auto;width:90%;'>
 ---
