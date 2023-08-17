@@ -1,0 +1,78 @@
+@use "../abstracts" as *;
+
+.specialties {
+    width: 100%;
+    height: 100%;
+    position: relative;
+    background-image: url("../images/specialities/specialtys-bg.jpg");
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    padding-bottom: 100px;
+
+    &__title-small {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        width: 100%;
+        height: 100px;
+    }
+
+    &__body {
+        margin: 0 10px;
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        justify-content: center;
+        grid-gap: 20px 20px;
+
+        @media screen and (max-width: $tablet) {
+            grid-template-columns: repeat(auto-fit, minmax(475px, 1fr));
+            grid-auto-rows: auto;
+        }
+        @media screen and (max-width: $mobile) {
+            grid-template-columns: repeat(auto-fit, minmax(375px, 1fr));
+        }
+    }
+
+    &__left-side {
+        display: grid;
+        justify-content: flex-end;
+        align-items: center;
+
+        @media screen and (max-width: $tablet) {
+            justify-content: center;
+        }
+    }
+    &__right-side {
+        @include flex(flex, row, center, center);
+    }
+
+    &__gallery-dot {
+        position: absolute;
+        left: calc(50% - 5px);
+        bottom: 45px;
+        width: 10px;
+        height: 10px;
+        border-radius: 100%;
+        background-color: rgba(255, 255, 255, 0.8);
+
+        &::before {
+            content: "";
+            position: absolute;
+            right: 25px;
+            width: 10px;
+            height: 10px;
+            border-radius: 100%;
+            background-color: rgba(255, 255, 255, 0.4);
+        }
+        &::after {
+            content: "";
+            position: absolute;
+            left: 25px;
+            width: 10px;
+            height: 10px;
+            border-radius: 100%;
+            background-color: rgba(255, 255, 255, 0.4);
+        }
+    }
+}

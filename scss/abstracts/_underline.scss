@@ -1,0 +1,9 @@
+@use "../abstracts/colors" as *;
+
+.underline {
+    width: 4rem;
+    height: 5px;
+    background-color: $decor-clr;
+    border-radius: 2px;
+    transition: width 0.5s;
+}

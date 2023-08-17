@@ -1,0 +1,94 @@
+@use "../utils/brackpoints" as b;
+@use "../abstracts/colors" as c;
+@use "../abstracts/mixins" as *;
+
+.burger-menu {
+    position: absolute;
+    z-index: 60;
+    inset: 0% 0% 0% 90%;
+
+    display: none;
+    flex-direction: column;
+    align-items: center;
+    transition-duration: 0.6s;
+
+    &.active {
+        position: fixed;
+        background-color: rgba(0, 0, 0, 0.9);
+        inset: 0% 0% 0% 40%;
+
+        @supports (backdrop-filter: blur(0.8rem)) {
+            &.burger-menu {
+                background-color: rgba(0, 0, 0, 0.5);
+                backdrop-filter: blur(0.8rem);
+            }
+        }
+
+        .burger-menu__nav {
+            display: flex;
+        }
+        .burger-menu__wrapper {
+        }
+    }
+
+    @media screen and (min-width: b.$desktop-large) {
+        display: none;
+    }
+    @media screen and (max-width: b.$desktop-large) {
+        display: none;
+    }
+    @media screen and (max-width: b.$desktop) {
+        display: none;
+    }
+    @media screen and (max-width: b.$tablet) {
+        display: flex;
+    }
+
+    &__wrapper {
+        position: absolute;
+        top: 20px;
+        right: 20px;
+
+        width: 30px;
+        height: 25px;
+        @include flex(flex, column, space-between, center);
+        margin: 10px 16px 0 0;
+    }
+
+    &__item {
+        display: block;
+        width: 30px;
+        height: 2.5px;
+        border-radius: 2px;
+        background-color: #fff;
+    }
+
+    &__nav {
+        display: none;
+        width: 100%;
+        height: 50%;
+        margin-top: 5%;
+    }
+
+    &__list {
+        width: 100%;
+        height: 100%;
+        @include flex(flex, column, space-between, flex-start);
+        padding-top: 100px;
+        margin-left: 10%;
+    }
+
+    &__link {
+        font-size: 1.2rem;
+        line-height: 2rem;
+        &:hover {
+            font-size: 1.4rem;
+            line-height: 2rem;
+            background-color: c.$decor-clr;
+            padding: 0px 20px;
+        }
+    }
+}
+
+.--link-style {
+}

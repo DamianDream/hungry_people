@@ -1,0 +1,10 @@
+@use "../abstracts/colors" as c;
+@use "../abstracts/mixins" as *;
+
+.title-small {
+   @include font("Open_Sans", 12px, 700, normal);
+   text-transform: uppercase;
+   line-height: 14px;
+   letter-spacing: 6px;
+   color: c.$primary-text-clr;
+}

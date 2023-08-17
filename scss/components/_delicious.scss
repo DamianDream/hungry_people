@@ -1,0 +1,115 @@
+@use "../abstracts" as *;
+
+.delicious {
+    margin-top: 100px;
+    margin-bottom: 100px;
+
+    @media screen and (max-width: $mobile) {
+        margin-top: 50px;
+        margin-bottom: 20px;
+    }
+
+    &__header {
+        display: grid;
+        grid-auto-flow: row;
+        justify-content: center;
+        align-items: center;
+    }
+
+    &__menu {
+        padding-top: 50px;
+    }
+
+    &__menu-list {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        align-items: center;
+    }
+
+    &__menu-link {
+        width: 120px;
+        text-align: center;
+        border-right: 1px solid rgba(0, 0, 0, 0.3);
+
+        &:last-child {
+            border-right: none;
+        }
+
+        a {
+            @include font("Open_Sans", 12px, 700, normal);
+            line-height: 50px;
+            color: $dark-text-clr;
+            text-decoration: none;
+            text-transform: uppercase;
+
+            &:hover {
+                color: $hover-clr;
+                text-shadow: 0px 0px 5px rgba(200, 255, 0, 0.4);
+            }
+        }
+    }
+
+    &__menu-body {
+        display: grid;
+        grid-template-columns: repeat(auto-fit, 363px);
+        grid-auto-rows: auto;
+        justify-content: center;
+
+        padding-top: 50px;
+        grid-gap: 2px 80px;
+    }
+}
+
+.description {
+    grid-gap: 10px;
+
+    &__title {
+        text-align: center;
+    }
+    &__text {
+        padding-top: 10px;
+        max-width: 565px;
+    }
+}
+.menu-item {
+    display: grid;
+    grid-template-columns: auto auto;
+    min-width: 363px;
+    min-height: 66px;
+
+    @media screen and (max-width: $desktop) {
+        &:nth-child(odd) {
+            display: none;
+        }
+    }
+
+    &__description {
+        display: grid;
+        grid-template-rows: max-content auto;
+    }
+
+    &__title {
+        @include font("Banny Bold Round", 18px, normal, normal);
+        line-height: 18px;
+        text-transform: uppercase;
+        &::after {
+            content: " ....";
+            letter-spacing: 6px;
+        }
+    }
+
+    &__text {
+        @include font("Open_Sans", 12px, 400, normal);
+        line-height: 18px;
+        color: rgba(0, 0, 0, 0.5);
+    }
+
+    &__cost {
+        @include font("Banny Bold Round", 18px, normal, normal);
+        line-height: 18px;
+        &::after {
+            content: " USD";
+        }
+    }
+}

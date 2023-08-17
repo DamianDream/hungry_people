@@ -1,0 +1,87 @@
+@use "../abstracts" as *;
+
+.booking {
+    padding-top: 100px;
+
+    &__body {
+        margin: 0 10px;
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        justify-content: center;
+        grid-gap: 20px 20px;
+
+        @media screen and (max-width: $tablet) {
+            grid-template-columns: repeat(auto-fit, minmax(475px, 1fr));
+            grid-auto-rows: auto;
+        }
+        @media screen and (max-width: $mobile) {
+            grid-template-columns: repeat(auto-fit, minmax(375px, 1fr));
+        }
+    }
+
+    &__title {
+        margin-bottom: 20px;
+    }
+
+    &__form {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        align-items: center;
+        grid-gap: 10px 10px;
+    }
+    &__form-people-number {
+        position: relative;
+    }
+    &__form-submit {
+        grid-column: 1 / span 2;
+
+        .btn {
+            color: $primary-text-clr;
+            background-color: $decor-clr;
+
+            &:hover {
+                background-color: lighten($color: $decor-clr, $amount: 2%);
+            }
+        }
+    }
+
+    &__left-side {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+    &__right-side {
+        display: grid;
+        justify-content: flex-start;
+        align-items: center;
+
+        @media screen and (max-width: $tablet) {
+            justify-content: center;
+        }
+    }
+
+    &__contacts {
+        min-height: 100px;
+        display: flex;
+        flex-wrap: wrap;
+        grid-template-rows: auto;
+        grid-gap: 6px 6px;
+        justify-content: center;
+        align-items: center;
+        padding: 0px 10px;
+
+        min-height: 100px;
+        @include font("Open_Sans", 14px, 400, normal);
+        line-height: 20px;
+        text-align: center;
+        color: rgba(0, 0, 0, 0.5);
+
+        span {
+            font-weight: 700;
+        }
+        p {
+            width: fit-content;
+        }
+    }
+}

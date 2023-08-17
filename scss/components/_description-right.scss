@@ -1,0 +1,36 @@
+@use "../abstracts/colors" as c;
+@use "../abstracts/mixins" as *;
+
+.description-right {
+    @include flex(flex, column, center, center);
+
+    &__body {
+        max-width: 600px;
+        @include flex(flex, column, center, center);
+        gap: 20px;
+    }
+    &__title {
+        @include font("Banny Bold Round", 36px, normal, normal);
+        line-height: 48px;
+        text-transform: uppercase;
+        text-align: center;
+        color: c.$primary-text-clr;
+    }
+    &__decoration-line {
+        margin: 0 auto;
+    }
+    &__text {
+        @include font("Open_Sans", 18px, 700, normal);
+        line-height: 28px;
+        text-align: center;
+        color: c.$primary-text-clr;
+        padding: 0px 10px;
+    }
+    &__text-normal {
+        @include font("Open_Sans", 14px, 400, normal);
+        line-height: 24px;
+        text-align: center;
+        color: c.$primary-text-clr;
+        padding: 0px 10px;
+    }
+}

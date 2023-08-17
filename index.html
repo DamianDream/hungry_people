@@ -1,0 +1,632 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Hungry People</title>
+
+    <!-- Favicon -->
+    <link rel="icon" type="image/png" sizes="32x32" href="images/favicon/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="images/favicon//favicon-16x16.png">
+    <link rel="manifest" href="images/favicon//site.webmanifest">
+    <link rel="mask-icon" href="images/favicon//safari-pinned-tab.svg" color="#2a2a2a">
+    <meta name="msapplication-TileColor" content="#da532c">
+    <meta name="theme-color" content="#ffffff">
+
+    <!-- Styles -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+    <link rel="stylesheet" href="css/style.css" type="text/css" />
+
+</head>
+
+<body>
+    <div class="wrapper">
+
+        <header class="header">
+            <div class="container">
+                <div class="main-menu">
+                    <nav class="main-menu__inner">
+                        <ul class="main-menu__list-left">
+                            <li><a href="#main" target="_self" class="main-menu__link --link-style">home</a></li>
+                            <li><a href="#about" target="_self" class="main-menu__link --link-style">about</a></li>
+                            <li><a href="#team" target="_self" class="main-menu__link --link-style">team</a></li>
+                            <li><a href="#booking" target="_self" class="main-menu__link --link-style">booking</a></li>
+                        </ul>
+                        <div class="main-menu__logo">
+                            <img src="images/logo/main_logo.png" alt="" class="main-menu__img" />
+                        </div>
+                        <ul class="main-menu__list-right">
+                            <li><a href="#specialties" target="_self" class="main-menu__link --link-style">menu</a></li>
+                            <li><a href="#delicious" target="_self" class="main-menu__link --link-style">galerie</a>
+                            </li>
+                            <li><a href="#private" target="_self" class="main-menu__link --link-style">events</a></li>
+                            <li><a href="#contacts" target="_self" class="main-menu__link --link-style">contacts</a>
+                            </li>
+                        </ul>
+                    </nav>
+
+                    <div class="main-menu__burger burger-menu" onclick="$('.burger-menu').toggleClass('active')">
+                        <div class="burger-menu__wrapper">
+                            <span class="burger-menu__item"></span>
+                            <span class="burger-menu__item"></span>
+                            <span class="burger-menu__item"></span>
+                        </div>
+
+                        <nav class="burger-menu__nav">
+                            <ul class="burger-menu__list">
+                                <li><a href="#main" target="_self" class="burger-menu__link --link-style">home</a></li>
+                                <li><a href="#about" target="_self" class="burger-menu__link --link-style">about</a>
+                                </li>
+                                <li><a href="#team" target="_self" class="burger-menu__link --link-style">team</a></li>
+                                <li><a href="#booking" target="_self" class="burger-menu__link --link-style">booking</a>
+                                </li>
+                                <li><a href="#specialties" target="_self"
+                                        class="burger-menu__link --link-style">menu</a>
+                                </li>
+                                <li><a href="#delicious" target="_self"
+                                        class="burger-menu__link --link-style">galerie</a>
+                                </li>
+                                <li><a href="#private" target="_self" class="burger-menu__link --link-style">events</a>
+                                </li>
+                                <li><a href="#contacts" target="_self"
+                                        class="burger-menu__link --link-style">contacts</a>
+                                </li>
+                            </ul>
+                        </nav>
+                    </div>
+                </div>
+            </div>
+        </header>
+
+        <main class="main" id="main">
+            <!-- First page -->
+            <section class="hero-page">
+                <div class="hero-page__content container">
+                    <div class="work-time">
+                        <p class="work-time__text">Mon - Fri: 8PM - 10PM, Sat - Sun: 8PM - 3AM</p>
+                    </div>
+
+                    <div class="intro">
+                        <div class="intro__title-small title-small">restaurant</div>
+
+                        <div class="intro__title-big">
+                            <h1>hungry people</h1>
+                        </div>
+                        <div class="intro__title-underline underline"></div>
+
+                        <div class="intro__btn">
+                            <div class="intro__btn-book-table btn"><a href="#booking" target="_self">book table</a>
+                            </div>
+                            <div class="intro__btn-explore btn"><a href="#contacts" target="_self">explore</a></div>
+                        </div>
+                    </div>
+                    <div class="social">
+                        <div class="social__facebook">
+                            <img src="images/svg/fb.svg" alt="" />
+                        </div>
+                        <div class="social__twitter">
+                            <img src="images/svg/twitter.svg" alt="" />
+                        </div>
+                        <div class="social__instagram">
+                            <img src="images/svg/instagram.svg" alt="" />
+                        </div>
+                    </div>
+
+                </div>
+                <div class="teleport">
+                    <div class="teleport__mark">
+                        <i class="fa-solid fa-angle-down"></i>
+                    </div>
+                </div>
+                <div class="work-time-mobile">
+                    <p class="work-time-mobile__text">Mon - Fri: 8PM - 10PM, Sat - Sun: 8PM - 3AM</p>
+                </div>
+            </section>
+
+            <!-- About section-1 -->
+            <section class="about" id="about">
+
+                <div class="container">
+                    <div class="about__body">
+                        <div class="about__left-side description">
+                            <div class="description__body">
+                                <div class="description__title">about us</div>
+                                <div class="description__decoration-line underline"></div>
+                                <div class="description__text">
+                                    <p>
+                                        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis at velit maximus,
+                                        molestie est a, tempor magna.
+                                    </p>
+                                </div>
+                                <div class="description__text-normal">
+                                    <p>
+                                        Integer ullamcorper neque eu purus euismod, ac faucibus mauris posuere. Morbi
+                                        non
+                                        ultrices ligula. Sed dictum, enim sed ullamcorper feugiat, dui odio vehicula
+                                        eros, a
+                                        sollicitudin lorem quam nec sem. Mauris tincidunt feugiat diam convallis
+                                        pharetra.
+                                        Nulla facilisis semper laoreet.
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="about__right-side">
+                            <div class="picture-right">
+                                <div class="picture-right__image">
+                                    <img src="images/about/about-img.jpg" alt="charkoal picture" />
+                                    <div class="picture-right__decor decoration-block"></div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+            </section>
+
+            <!-- Team section-2 -->
+            <section class="team" id="team">
+
+                <div class="container">
+                    <div class="team__title-small title-small">our team</div>
+                    <div class="team__body">
+                        <div class="team__left-side">
+
+                            <div class="picture">
+                                <div class="picture__image">
+                                    <img src="images/master/master.jpg" alt="charkoal picture" />
+                                    <div class="picture__decor decoration-block"></div>
+                                </div>
+                            </div>
+
+                        </div>
+
+                        <div class="team__right-side description-right">
+                            <div class="description__body">
+                                <div class="description-right__title ">master chef</div>
+                                <div class="description-right__decoration-line underline"></div>
+                                <div class="description-right__text">
+                                    <p>
+                                        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis at velit maximus,
+                                        molestie est a, tempor magna.
+                                    </p>
+                                </div>
+                                <div class="description-right__text-normal">
+                                    <p>
+                                        Integer ullamcorper neque eu purus euismod, ac faucibus mauris posuere. Morbi
+                                        non
+                                        ultrices ligula. Sed dictum, enim sed ullamcorper feugiat, dui odio vehicula
+                                        eros, a
+                                        sollicitudin lorem quam nec sem. Mauris tincidunt feugiat diam convallis
+                                        pharetra.
+                                        Nulla facilisis semper laoreet.
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+            </section>
+
+            <!-- Team section-3 -->
+            <section class="booking" id="booking">
+                <div class="container">
+                    <div class="booking__body">
+                        <div class="booking__left-side">
+                            <div class="booking__title description">
+                                <div class="description__title">book a table</div>
+                                <div class="description__decoration-line underline"></div>
+                            </div>
+                            <form name="booking-table" action="#" method="get"></form>
+                            <div class="booking__form">
+                                <div class="booking__form-name">
+                                    <input type="text" id="username" name="username" placeholder="Name" value=""
+                                        required />
+                                </div>
+                                <div class="booking__form-phone">
+                                    <input type="tel" id="usertelephone" name="usertelephone" placeholder="Phone"
+                                        value="" />
+                                </div>
+                                <div class="booking__form-date">
+                                    <input type="date" id="userdate" name="userdate" placeholder="Date (mm/dd)"
+                                        value="" />
+                                </div>
+                                <div class="booking__form-email">
+                                    <input type="email" id="email" value="Email" pattern=".+@globex\.com" size="30"
+                                        required />
+                                </div>
+                                <div class="booking__form-people-number">
+                                    <select id="people-number" name="people-number" class="select-container">
+                                        <option value="1">1 persone</option>
+                                        <option value="2">2 persone</option>
+                                        <option value="3">3 persone</option>
+                                        <option value="4">4 persone</option>
+                                        <option value="5">5 persone</option>
+                                        <option value="6">6 persone</option>
+                                    </select>
+                                </div>
+                                <div class="booking__form-time-schedule">
+                                    <input id="time-schedule" type="time" name="time-schedule" value="" required />
+                                </div>
+                                <div class="booking__form-submit">
+                                    <input type="submit" value="Submit" class="btn" />
+                                </div>
+                            </div>
+                            </form>
+                        </div>
+                        <div class="booking__right-side">
+                            <div class="picture-right">
+                                <div class="picture-right__image">
+                                    <img src="images/booking/booking-img.jpg" alt="charkoal picture" />
+                                    <div class="picture-right__decor decoration-block"></div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="booking__contacts">
+                        <p>
+                            Mon - Fri: <span>8PM - 10PM</span>,
+                        </p>
+                        <p>
+                            Sat - Sun: <span>8PM - 3AM</span>,
+                        </p>
+                        <p>
+                            Phone: <span>
+                                +40 729 131 637/+40 726 458 782</span>
+                        </p>
+                    </div>
+                </div>
+            </section>
+
+            <!--  Specialties section-4  -->
+            <section class="specialties" id="specialties">
+                <div class="container">
+                    <div class="specialties__title-small title-small">specialties</div>
+                    <div class="specialties__body">
+                        <div class="specialties__left-side">
+                            <div class="picture">
+                                <div class="picture__image">
+                                    <img src="images/specialities/specialities.jpg" alt="charkoal picture" />
+                                    <div class="picture__decor decoration-block"></div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="specialties__right-side description">
+                            <div class="description-right__body">
+                                <div class="description-right__title ">chokolate pancakes</div>
+                                <div class="description-right__decoration-line underline"></div>
+                                <div class="description-right__text">
+                                    <p>
+                                        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis at velit maximus,
+                                        molestie est a, tempor magna.
+                                    </p>
+                                </div>
+                                <div class="description-right__text-normal">
+                                    <p>
+                                        Integer ullamcorper neque eu purus euismod, ac faucibus mauris posuere. Morbi
+                                        non
+                                        ultrices ligula. Sed dictum, enim sed ullamcorper feugiat, dui odio vehicula
+                                        eros, a
+                                        sollicitudin lorem quam nec sem. Mauris tincidunt feugiat diam convallis
+                                        pharetra.
+                                        Nulla facilisis semper laoreet.
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="specialties__gallery-dot">
+                    </div>
+                </div>
+            </section>
+
+            <!--  Delicious menu section-5  -->
+            <section class="delicious" id="delicious">
+
+                <div class="container">
+                    <div class="delicious__header description">
+                        <div class="description__title ">delicious menu</div>
+                        <div class="description__decoration-line underline"></div>
+                        <div class="description__text">
+                            <p>
+                                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis at velit maximus,
+                                molestie est a, tempor magna.
+                            </p>
+                        </div>
+                    </div>
+                    <div class="delicious__menu">
+
+                        <div class="delicious__menu-list">
+                            <div class="delicious__menu-link"><a href="#none" target="_self">soup</a></div>
+                            <div class="delicious__menu-link"><a href="#none" target="_self">pizza</a></div>
+                            <div class="delicious__menu-link"><a href="#none" target="_self">pasta</a></div>
+                            <div class="delicious__menu-link"><a href="#none" target="_self">desert</a></div>
+                            <div class="delicious__menu-link"><a href="#none" target="_self">wine</a></div>
+                            <div class="delicious__menu-link"><a href="#none" target="_self">bear</a></div>
+                            <div class="delicious__menu-link"><a href="#none" target="_self">drinks</a></div>
+                        </div>
+
+                        <div class="delicious__menu-body">
+                            <div class="delicious__menu-item menu-item">
+                                <div class="menu-item__description">
+                                    <div class="menu-item__title">pizza quatro stagioni</div>
+                                    <div class="menu-item__text">Lorem ipsum dolor sit amet consectetur</div>
+                                </div>
+                                <div class="menu-item__cost">55.68</div>
+                            </div>
+                            <div class="delicious__menu-item menu-item">
+                                <div class="menu-item__description">
+                                    <div class="menu-item__title">pizza quatro stagioni</div>
+                                    <div class="menu-item__text">Lorem ipsum dolor sit amet consectetur</div>
+                                </div>
+                                <div class="menu-item__cost">55.68</div>
+                            </div>
+                            <div class="delicious__menu-item menu-item">
+                                <div class="menu-item__description">
+                                    <div class="menu-item__title">pizza quatro stagioni</div>
+                                    <div class="menu-item__text">Lorem ipsum dolor sit amet consectetur</div>
+                                </div>
+                                <div class="menu-item__cost">55.68</div>
+                            </div>
+                            <div class="delicious__menu-item menu-item">
+                                <div class="menu-item__description">
+                                    <div class="menu-item__title">pizza quatro stagioni</div>
+                                    <div class="menu-item__text">Lorem ipsum dolor sit amet consectetur</div>
+                                </div>
+                                <div class="menu-item__cost">55.68</div>
+                            </div>
+                            <div class="delicious__menu-item menu-item">
+                                <div class="menu-item__description">
+                                    <div class="menu-item__title">pizza quatro stagioni</div>
+                                    <div class="menu-item__text">Lorem ipsum dolor sit amet consectetur</div>
+                                </div>
+                                <div class="menu-item__cost">55.68</div>
+                            </div>
+                            <div class="delicious__menu-item menu-item">
+                                <div class="menu-item__description">
+                                    <div class="menu-item__title">pizza quatro stagioni</div>
+                                    <div class="menu-item__text">Lorem ipsum dolor sit amet consectetur</div>
+                                </div>
+                                <div class="menu-item__cost">55.68</div>
+                            </div>
+                            <div class="delicious__menu-item menu-item">
+                                <div class="menu-item__description">
+                                    <div class="menu-item__title">pizza quatro stagioni</div>
+                                    <div class="menu-item__text">Lorem ipsum dolor sit amet consectetur</div>
+                                </div>
+                                <div class="menu-item__cost">55.68</div>
+                            </div>
+                            <div class="delicious__menu-item menu-item">
+                                <div class="menu-item__description">
+                                    <div class="menu-item__title">pizza quatro stagioni</div>
+                                    <div class="menu-item__text">Lorem ipsum dolor sit amet consectetur</div>
+                                </div>
+                                <div class="menu-item__cost">55.68</div>
+                            </div>
+                            <div class="delicious__menu-item menu-item">
+                                <div class="menu-item__description">
+                                    <div class="menu-item__title">pizza quatro stagioni</div>
+                                    <div class="menu-item__text">Lorem ipsum dolor sit amet consectetur</div>
+                                </div>
+                                <div class="menu-item__cost">55.68</div>
+                            </div>
+                            <div class="delicious__menu-item menu-item">
+                                <div class="menu-item__description">
+                                    <div class="menu-item__title">pizza quatro stagioni</div>
+                                    <div class="menu-item__text">Lorem ipsum dolor sit amet consectetur</div>
+                                </div>
+                                <div class="menu-item__cost">55.68</div>
+                            </div>
+                            <div class="delicious__menu-item menu-item">
+                                <div class="menu-item__description">
+                                    <div class="menu-item__title">pizza quatro stagioni</div>
+                                    <div class="menu-item__text">Lorem ipsum dolor sit amet consectetur</div>
+                                </div>
+                                <div class="menu-item__cost">55.68</div>
+                            </div>
+                            <div class="delicious__menu-item menu-item">
+                                <div class="menu-item__description">
+                                    <div class="menu-item__title">pizza quatro stagioni</div>
+                                    <div class="menu-item__text">Lorem ipsum dolor sit amet consectetur</div>
+                                </div>
+                                <div class="menu-item__cost">55.68</div>
+                            </div>
+                            <div class="delicious__menu-item menu-item">
+                                <div class="menu-item__description">
+                                    <div class="menu-item__title">pizza quatro stagioni</div>
+                                    <div class="menu-item__text">Lorem ipsum dolor sit amet consectetur</div>
+                                </div>
+                                <div class="menu-item__cost">55.68</div>
+                            </div>
+                            <div class="delicious__menu-item menu-item">
+                                <div class="menu-item__description">
+                                    <div class="menu-item__title">pizza quatro stagioni</div>
+                                    <div class="menu-item__text">Lorem ipsum dolor sit amet consectetur</div>
+                                </div>
+                                <div class="menu-item__cost">55.68</div>
+                            </div>
+                            <div class="delicious__menu-item menu-item">
+                                <div class="menu-item__description">
+                                    <div class="menu-item__title">pizza quatro stagioni</div>
+                                    <div class="menu-item__text">Lorem ipsum dolor sit amet consectetur</div>
+                                </div>
+                                <div class="menu-item__cost">55.68</div>
+                            </div>
+                            <div class="delicious__menu-item menu-item">
+                                <div class="menu-item__description">
+                                    <div class="menu-item__title">pizza quatro stagioni</div>
+                                    <div class="menu-item__text">Lorem ipsum dolor sit amet consectetur</div>
+                                </div>
+                                <div class="menu-item__cost">55.68</div>
+                            </div>
+                            <div class="delicious__menu-item menu-item">
+                                <div class="menu-item__description">
+                                    <div class="menu-item__title">pizza quatro stagioni</div>
+                                    <div class="menu-item__text">Lorem ipsum dolor sit amet consectetur</div>
+                                </div>
+                                <div class="menu-item__cost">55.68</div>
+                            </div>
+                            <div class="delicious__menu-item menu-item">
+                                <div class="menu-item__description">
+                                    <div class="menu-item__title">pizza quatro stagioni</div>
+                                    <div class="menu-item__text">Lorem ipsum dolor sit amet consectetur</div>
+                                </div>
+                                <div class="menu-item__cost">55.68</div>
+                            </div>
+                            <div class="delicious__menu-item menu-item">
+                                <div class="menu-item__description">
+                                    <div class="menu-item__title">pizza quatro stagioni</div>
+                                    <div class="menu-item__text">Lorem ipsum dolor sit amet consectetur</div>
+                                </div>
+                                <div class="menu-item__cost">55.68</div>
+                            </div>
+                            <div class="delicious__menu-item menu-item">
+                                <div class="menu-item__description">
+                                    <div class="menu-item__title">pizza quatro stagioni</div>
+                                    <div class="menu-item__text">Lorem ipsum dolor sit amet consectetur</div>
+                                </div>
+                                <div class="menu-item__cost">55.68</div>
+                            </div>
+                            <div class="delicious__menu-item menu-item">
+                                <div class="menu-item__description">
+                                    <div class="menu-item__title">pizza quatro stagioni</div>
+                                    <div class="menu-item__text">Lorem ipsum dolor sit amet consectetur</div>
+                                </div>
+                                <div class="menu-item__cost">55.68</div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+            </section>
+
+            <!--  Private section-5  -->
+            <section class="private" id="private">
+                <div class="container">
+                    <div class="private__title-small title-small">private events</div>
+                    <div class="private__body">
+                        <div class="private__left-side">
+                            <div class="picture">
+                                <div class="picture__image">
+                                    <div>
+                                        <div class="picture__text-overlay">
+                                            <span class="picture__text text-overlay-font">corporate events</span>
+                                        </div>
+                                        <img src="images/private/private_left.jpg" alt="picture" />
+                                        <div class="picture__decor decoration-block"></div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="private__right-side">
+                            <div class="picture-right">
+                                <div class="picture-right__image">
+                                    <div>
+                                        <div class="picture-right__text-overlay">
+                                            <span class="picture-right__text text-overlay-font">corporate events</span>
+                                        </div>
+                                        <img src="images/private/private_right.jpg" alt="picture" />
+                                        <div class="picture-right__decor decoration-block"></div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="private__contacts">
+                        <p>
+                            For private events please call: <span>+40 729 131 637/+40 726 458 782</span> or use the
+                            contact form.
+                        </p>
+                    </div>
+                </div>
+            </section>
+
+            <div class="private__gallery">
+                <img src="images/private/case1.jpg" loading="lazy" alt="gallery picture"
+                    class="private__gallery-item" />
+                <img src="images/private/case2.jpg" loading="lazy" alt="gallery picture"
+                    class="private__gallery-item" />
+                <img src="images/private/case3.jpg" loading="lazy" alt="gallery picture"
+                    class="private__gallery-item" />
+                <img src="images/private/case4.jpg" loading="lazy" alt="gallery picture"
+                    class="private__gallery-item" />
+            </div>
+
+            <!--  Contacts section-5  -->
+            <section class="contacts" id="contacts">
+
+                <div class="container">
+                    <div class="contact__header description">
+                        <div class="description__title ">contact</div>
+                        <div class="description__decoration-line underline"></div>
+                        <div class="description__text">
+                            <p>
+                                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis at velit maximus,
+                                molestie est a, tempor magna.
+                            </p>
+                        </div>
+                    </div>
+
+                    <div class="contact__form">
+                        <form name="contact-form" action="#" method="get">
+                            <section class="contact__user-data contact-form">
+                                <div class="contact-form__name">
+                                    <input type="text" id="username" name="username" placeholder="Name" value=""
+                                        required />
+                                </div>
+                                <div class="contact-form__email">
+                                    <input type="email" id="useremail" name="useremail" placeholder="Email"
+                                        pattern=".+@globex\.com" size="0" />
+                                </div>
+                                <div class="contact-form__phone">
+                                    <input type="tel" id="userphone" name="userphone" placeholder="Phone" value=""
+                                        required />
+                                </div>
+
+                            </section>
+                            <div class="contact-form__message">
+                                <textarea name="usermessage" placeholder="Message" id="usermessage"></textarea>
+                            </div>
+                            <section class="contact__submit">
+                                <div class="contact__reception">
+                                    <div class="contact__reception-location">
+                                        <i class="fa-solid fa-location-dot"></i>5th London Boulevard, U.K.
+                                    </div>
+                                    <div class="contact__reception-telephone">
+                                        <i class="fa-solid fa-phone"></i>+40 729 131 637/+40 726 458 782
+                                    </div>
+                                    <div class="contact__reception-email">
+                                        <i class="fa-solid fa-envelope"></i>office@mindblister.com
+                                    </div>
+                                </div>
+                                <div class="contact__submit-btn">
+                                    <input type="submit" value="Send message" class="contact-btn" />
+                                </div>
+                            </section>
+                        </form>
+                    </div>
+                </div>
+                <div class="contact__map-location" id="map">
+                    <iframe
+                        src="https://www.google.com/maps/embed?pb=!1m16!1m12!1m3!1d12664.916977354436!2d-0.08606368211569436!3d51.49169135604437!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!2m1!1zTG9uZG9uLCDQktC10LvQuNC60L7QsdGA0LjRgtCw0L3QuNGPIGJ1bGV2YXJk!5e0!3m2!1sru!2sua!4v1658392314286!5m2!1sru!2sua"
+                        style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade">
+                    </iframe>
+                </div>
+
+            </section>
+        </main>
+
+        <footer class="footer">
+            <div id="my-copyright" class="my-copyright"></div>
+        </footer>
+    </div>
+    <script src="https://kit.fontawesome.com/11632052cb.js" crossorigin="anonymous"></script>
+    <script src="js/script.js"></script>
+</body>
+
+</html>

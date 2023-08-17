@@ -1,0 +1,13 @@
+@mixin font($ff-name, $ff-size, $ff-weight, $ff-style) {
+    font-family: $ff-name, sans-serif;
+    font-size: $ff-size;
+    font-style: $ff-style;
+    font-weight: $ff-weight;
+}
+
+@mixin flex($display, $flex-direction, $justify-content, $align-items) {
+    display: $display;
+    flex-direction: $flex-direction;
+    justify-content: $justify-content;
+    align-items: $align-items;
+}
