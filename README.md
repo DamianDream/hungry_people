@@ -1,7 +1,7 @@
 
 <h1 style="text-align: center">Website "HUNGRY PEOPLE"</h1>
 ---
-Link (Demo)
+[Link](https://damiandream.github.io/hungry_people/) (Demo)
 
 <img src="./images/screenshot-page_top.jpg" style='display:block;margin-left:auto;margin-right:auto;width:90%;'>
 ---
